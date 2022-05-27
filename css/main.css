@@ -1,0 +1,376 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+/**
+ * Add the correct font size in all browsers.
+ */
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type=button] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type=button]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+
+/*
+ * Add the correct display in all browsers.
+ */
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+
+/**
+ * Add the correct display in IE 10.
+ */
+
+* {
+  font-family: "Public Sans";
+}
+
+.primary-btn {
+  background: linear-gradient(90deg, rgb(43, 183, 218) 0%, rgb(49, 211, 92) 0%, rgb(44, 211, 105) 44%, rgb(0, 212, 255) 100%);
+  color: white;
+  padding: 12px 25px;
+  border: 0;
+  border-radius: 50px;
+  font-size: 14px;
+}
+
+ .plans p, .landing-section .intro p {
+  font-size: 15px;
+  color: hsl(233deg, 8%, 62%);
+}
+
+nav {
+  z-index: 3;
+  background-color: hsl(0deg, 0%, 100%);
+}
+nav ul li {
+  position: relative;
+}
+nav ul li:hover::after {
+  content: "";
+  position: absolute;
+  border-style: solid;
+  border-width: 0 25px 5px;
+  margin-left: -25px;
+  left: 50%;
+  bottom: -9px;
+}
+
+.landing-section {
+  background-color: hsl(0deg, 0%, 98%);
+}
+.landing-section .intro {
+  align-items: center;
+  position: relative;
+}
+.landing-section .intro-background {
+  height: 75vh;
+}
+.landing-section .intro-background .background {
+  z-index: 1;
+  background-image: url(../images/bg-intro-desktop.svg);
+  background-position: 6% 56%;
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 75vh;
+  right: 0;
+  width: 60%;
+}
+.landing-section .intro-background .mockups {
+  z-index: 2;
+  position: absolute;
+  top: -55px;
+  right: 0;
+  width: 50%;
+  height: 110vh;
+  background-size: contain;
+  background-position: 20vh;
+  background-image: url(../images/image-mockups.png);
+  background-repeat: no-repeat;
+}
+@media (max-width: 776px) {
+  .landing-section .intro-background .mockups {
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+  }
+  .landing-section .intro-background .background {
+    width: 100%;
+  }
+}
+
+.plans {
+  background-color: hsl(220deg, 16%, 96%);
+}
+.plans h2 {
+  font-size: 32px;
+  font-weight: 400;
+}
+.plans .card {
+  border: 0;
+  background-color: transparent;
+}
+.plans .card img {
+  width: 25%;
+}
+.plans .card h3 {
+  font-size: 24px;
+  font-weight: 400;
+  height: 15%;
+}
+.plans .card p {
+  color: hsl(233deg, 8%, 62%);
+  font-size: 12px;
+}
+
+.article {
+  background-color: hsl(0deg, 0%, 98%);
+}
+.article .card {
+  border: 0;
+  background-color: hsl(0deg, 0%, 98%);
+}
+.article .card .card-body {
+  background-color: white;
+}
+.article .card img {
+  height: 60%;
+}
+.article .card p {
+  font-size: 11px;
+  color: hsl(233deg, 8%, 62%);
+}
+.article .card .writer {
+  font-size: 9px;
+}
+.article .card a {
+  text-decoration: none;
+  color: black;
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+footer {
+  background-color: hsl(233deg, 26%, 24%);
+}
+footer .socia-media ul li {
+  display: inline-block;
+  margin: 0 5px;
+}
+footer .links ul li {
+  margin: 10px;
+  font-size: 14px;
+  color: hsl(0deg, 0%, 100%);
+  font-weight: 300;
+}
+footer .links ul li:hover {
+  color: hsl(136deg, 65%, 51%);
+  cursor: pointer;
+}
+footer .copy-right {
+  font-size: 15px;
+  color: hsl(233deg, 8%, 62%);
+}
+
+ footer .socia-media ul, footer .links ul {
+  list-style: none;
+  padding: 0;
+}
