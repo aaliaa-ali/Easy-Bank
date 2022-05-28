@@ -3,16 +3,11 @@
 @import "./variable";
 * {
   font-family: $base-font-family;
+  color: $Dark-Blue-text;
+  font-size: $base-font-size;
 }
-
 .primary-btn {
-  background: linear-gradient(
-    90deg,
-    rgba(43, 183, 218, 1) 0%,
-    rgba(49, 211, 92, 1) 0%,
-    rgba(44, 211, 105, 1) 44%,
-    rgba(0, 212, 255, 1) 100%
-  );
+  background: $base-linear-gradient;
   color: white;
   padding: 12px 25px;
   border: 0;
@@ -27,23 +22,62 @@
 nav {
   z-index: 3;
   background-color: $white;
-  ul {
+  .navbar-nav {
     li {
       position: relative;
       &:hover {
         &::after {
           content: "";
+          left: 0;
           position: absolute;
-          border-style: solid;
-          border-width: 0 25px 5px;
-          margin-left: -25px;
-          left: 50%;
-          bottom: -9px;
+          bottom: -10px;
+          background: $base-linear-gradient;
+          height: 5px;
+          animation-name: animate-width;
+          animation-duration: 0.5s;
+          // width: 100%;
         }
       }
     }
   }
+  @keyframes animate-width {
+    from {
+      width: 10%;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  .hidden-menu {
+    position: absolute;
+    top: 70px;
+    left: 50%;
+    width: 90%;
+    max-width: 400px;
+    background-color: white;
+    transform: translate(-50%);
+    text-align: center;
+    border-radius: 10px;
+    padding: 15px;
+    display: none;
+    a {
+      color: $Dark-Blue-text;
+    }
+  }
+  .navbar-toggler {
+    border: 0;
+
+    &:hover {
+      .hidden-menu {
+        display: block;
+      }
+      .navbar-toggler-icon {
+        background-image: url(../images/icon-close.svg);
+      }
+    }
+  }
 }
+
 .landing-section {
   background-color: $very-light-gray-background;
   .intro {
@@ -67,7 +101,6 @@ nav {
     }
     .mockups {
       z-index: 2;
-
       position: absolute;
       top: -55px;
       right: 0;
@@ -87,8 +120,15 @@ nav {
       }
       .background {
         width: 100%;
+        background-size: cover;
+        background-image: url(../images/bg-intro-mobile.svg);
       }
     }
+  }
+}
+@media (max-width: 400px) {
+  .intro-background {
+    height: 65vh !important;
   }
 }
 .plans {
@@ -131,17 +171,27 @@ nav {
       height: clamp(60%, 40%, 30%);
     }
     p {
-      font-size: 11px;
+      font-size: 0.6rem;
       color: $light-gray-text;
     }
     .writer {
-      font-size: 9px;
+      font-size: 0.5rem;
     }
-    a {
-      text-decoration: none;
-      color: black;
-      font-weight: 300;
-      font-size: 1rem;
+    h6 {
+      font-size: 0.75rem;
+      color: $Dark-Blue-text;
+      cursor: pointer;
+      &:hover {
+        background: linear-gradient(
+          to bottom,
+          hsl(136, 65%, 51%) 0%,
+          hsl(192, 70%, 51%) 100%
+        );
+        /* Mask the color to the text, and remove the rest  */
+        -webkit-background-clip: text;
+        /* Make the text fill color value transparent so the masked background color comes through */
+        -webkit-text-fill-color: transparent;
+      }
     }
   }
 }
