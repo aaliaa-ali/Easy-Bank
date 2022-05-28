@@ -153,13 +153,13 @@ nav {
       height: clamp(60%, 40%, 30%);
     }
     p {
-      @include text-styling(0.7rem, $light-gray-text);
+      @include text-styling(0.6rem, $light-gray-text);
     }
     .writer {
       font-size: 0.5rem;
     }
     h6 {
-      @include text-styling(0.8rem);
+      @include text-styling(0.85rem);
       cursor: pointer;
       &:hover {
         background: linear-gradient(

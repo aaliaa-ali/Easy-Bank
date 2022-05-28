@@ -392,7 +392,7 @@ nav .navbar-toggler:hover .navbar-toggler-icon {
 }
 .article .card p {
   color: hsl(233deg, 8%, 62%);
-  font-size: 0.7rem;
+  font-size: 0.6rem;
   font-weight: 300;
 }
 .article .card .writer {
@@ -400,7 +400,7 @@ nav .navbar-toggler:hover .navbar-toggler-icon {
 }
 .article .card h6 {
   color: hsl(233deg, 26%, 24%);
-  font-size: 0.8rem;
+  font-size: 0.85rem;
   font-weight: 300;
   cursor: pointer;
 }

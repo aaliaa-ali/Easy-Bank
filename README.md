@@ -1,4 +1,5 @@
 # Easy-Bank
+
 ## Table of contents
 
 - [Overview](#overview)
@@ -12,41 +13,38 @@
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-
 ## Overview
 
 ### The challenge
 
-
 - challenge is to build out this landing page and get it looking as close to the design as possible.
-<img src="./design/desktop-design.jpg" width='30%' alt="" />
-
-
+  <img src="./design/desktop-design.jpg" width='30%' alt="" />
 
 ### Screenshot
+
 <!-- <image s>./screen-shots/mopile%20screen.png) -->
-<img src="./screen-shots/mopile.png" width='50%' alt="" />
-
-### Links
-
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+<img src="./screenShots/mopile.png" width='30%' alt="" />
+<img src="./screenShots/desktop.png" width='30%' alt="" />
+<img src="./screenShots/hidden-menu.png" width='30%' alt="" />
 
 ## My process
+
 -first i build my html
 -build main scss files (variable,normalize)
 -build project styling
 -deploy project on git pages
+
 ### Built with
 
 - HTML& scss custom properties
 - bootstrap
 
-
 ### What I learned
 
- ### proud OfThis script
- use it to change svg color
+### proud OfThis script
+
+use it to change svg color
+
  <script>
       const objs = document.querySelectorAll("object");
 
@@ -72,14 +70,10 @@
 
 If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
 
-
 ### Useful resources
 
 - [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
 - [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-
-
 
 ## Acknowledgments
 
