@@ -1,0 +1,13 @@
+@mixin text-styling($size, $color: $Dark-Blue-text, $weigh: 300) {
+    color: $color;
+    font-size: $size;
+    font-weight: $weigh;
+  }
+  
+  @mixin background-img($img, $height, $width) {
+    background-repeat: no-repeat;
+    position: absolute;
+    background-image: url($img);
+    height: $height;
+    width: $width;
+  }

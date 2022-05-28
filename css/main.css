@@ -218,24 +218,29 @@ button:-moz-focusring,
  * Add the correct display in IE 10.
  */
 
-* {
-  font-family: "Public Sans";
-  color: hsl(233deg, 26%, 24%);
-  font-size: 18px;
-}
-
 .primary-btn {
   background: linear-gradient(to right, hsl(136deg, 65%, 51%) 0%, hsl(192deg, 70%, 51%) 100%);
   color: white;
   padding: 12px 25px;
   border: 0;
   border-radius: 50px;
-  font-size: 14px;
+  font-size: 0.8rem;
 }
 
  .plans p, .landing-section .intro p {
   font-size: 0.85rem;
   color: hsl(233deg, 8%, 62%);
+}
+
+ footer .links ul, footer .socia-media ul {
+  list-style: none;
+  padding: 0;
+}
+
+* {
+  font-family: "Public Sans";
+  color: hsl(233deg, 26%, 24%);
+  font-size: 18px;
 }
 
 nav {
@@ -300,29 +305,29 @@ nav .navbar-toggler:hover .navbar-toggler-icon {
   height: 75vh;
 }
 .landing-section .intro-background .background {
-  z-index: 1;
-  background-image: url(../images/bg-intro-desktop.svg);
-  background-position: 6% 56%;
   background-repeat: no-repeat;
   position: absolute;
-  height: 75vh;
-  right: 0;
+  background-image: url("../images/bg-intro-desktop.svg");
+  height: 75%;
   width: 60%;
+  background-position: 6% 56%;
+  right: 0;
 }
 .landing-section .intro-background .mockups {
-  z-index: 2;
+  background-repeat: no-repeat;
   position: absolute;
-  top: -55px;
-  right: 0;
+  background-image: url("../images/image-mockups.png");
+  height: 110%;
   width: 50%;
-  height: 110vh;
+  z-index: 2;
+  top: -10%;
+  right: 0;
   background-size: contain;
   background-position: 20vh;
-  background-image: url(../images/image-mockups.png);
-  background-repeat: no-repeat;
 }
 @media (max-width: 776px) {
   .landing-section .intro-background .mockups {
+    top: -20%;
     background-size: contain;
     width: 100%;
     height: 100%;
@@ -335,16 +340,17 @@ nav .navbar-toggler:hover .navbar-toggler-icon {
   }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   .intro-background {
-    height: 65vh !important;
+    height: 60vh !important;
   }
 }
 .plans {
   background-color: hsl(220deg, 16%, 96%);
 }
 .plans h2 {
-  font-size: 1.5rem;
+  color: "";
+  font-size: 1.8rem;
   font-weight: 400;
 }
 .plans .card {
@@ -355,13 +361,15 @@ nav .navbar-toggler:hover .navbar-toggler-icon {
   width: 25%;
 }
 .plans .card h3 {
-  font-size: 1.2rem;
+  color: "";
+  font-size: 1.3rem;
   font-weight: 400;
   height: 15%;
 }
 .plans .card p {
   color: hsl(233deg, 8%, 62%);
-  font-size: 0.7rem;
+  font-size: 0.8rem;
+  font-weight: 300;
 }
 
 .article {
@@ -378,15 +386,17 @@ nav .navbar-toggler:hover .navbar-toggler-icon {
   height: 60%;
 }
 .article .card p {
-  font-size: 0.6rem;
   color: hsl(233deg, 8%, 62%);
+  font-size: 0.7rem;
+  font-weight: 300;
 }
 .article .card .writer {
   font-size: 0.5rem;
 }
 .article .card h6 {
-  font-size: 0.75rem;
   color: hsl(233deg, 26%, 24%);
+  font-size: 0.8rem;
+  font-weight: 300;
   cursor: pointer;
 }
 .article .card h6:hover {
@@ -405,10 +415,10 @@ footer .socia-media ul li {
   margin: 0 5px;
 }
 footer .links ul li {
-  margin: 10px;
-  font-size: 14px;
   color: hsl(0deg, 0%, 100%);
+  font-size: 0.9rem;
   font-weight: 300;
+  margin: 10px;
 }
 footer .links ul li:hover {
   color: hsl(136deg, 65%, 51%);
@@ -417,9 +427,4 @@ footer .links ul li:hover {
 footer .copy-right {
   font-size: 15px;
   color: hsl(233deg, 8%, 62%);
-}
-
- footer .socia-media ul, footer .links ul {
-  list-style: none;
-  padding: 0;
 }
