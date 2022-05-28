@@ -23,7 +23,7 @@
 ### Screenshot
 
 <!-- <image s>./screen-shots/mopile%20screen.png) -->
-<img src="./screenShots/mopile.png" width='30%' alt="" />
+<img src="./screenShots/mobile.png" width='30%' alt="" />
 <img src="./screenShots/desktop.png" width='30%' alt="" />
 <img src="./screenShots/hidden-menu.png" width='30%' alt="" />
 
