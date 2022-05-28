@@ -350,7 +350,7 @@ nav .navbar-toggler:hover .navbar-toggler-icon {
 }
 .plans h2 {
   color: "";
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   font-weight: 400;
 }
 .plans .card {
@@ -368,12 +368,17 @@ nav .navbar-toggler:hover .navbar-toggler-icon {
 }
 .plans .card p {
   color: hsl(233deg, 8%, 62%);
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   font-weight: 300;
 }
 
 .article {
   background-color: hsl(0deg, 0%, 98%);
+}
+.article h2 {
+  color: "";
+  font-size: 1.7rem;
+  font-weight: 400;
 }
 .article .card {
   border: 0;

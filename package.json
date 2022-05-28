@@ -13,5 +13,13 @@
     "gulp-purgecss": "^4.1.3",
     "gulp-sass": "^5.1.0",
     "sass": "^1.52.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aaliaa-ali/Easy-Bank.git"
+  },
+  "bugs": {
+    "url": "https://github.com/aaliaa-ali/Easy-Bank/issues"
+  },
+  "homepage": "https://github.com/aaliaa-ali/Easy-Bank#readme"
 }

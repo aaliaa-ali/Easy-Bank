@@ -117,7 +117,7 @@ nav {
   background-color: $light-gray-blue-background;
 
   h2 {
-    @include text-styling(1.8rem, "", $title-font-weight);
+    @include text-styling(1.7rem, "", $title-font-weight);
   }
   p {
     @extend .description;
@@ -133,13 +133,16 @@ nav {
       height: 15%;
     }
     p {
-      @include text-styling(0.8rem, $light-gray-text);
+      @include text-styling(0.75rem, $light-gray-text);
     }
   }
 }
 
 .article {
   background-color: $very-light-gray-background;
+  h2 {
+    @include text-styling(1.7rem, "", $title-font-weight);
+  }
   .card {
     border: 0;
     background-color: $very-light-gray-background;
